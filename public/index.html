@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html manifest='cache.appcache'>
+	<head>
+
+		<title>Vector War</title>
+
+			<!-- Load style sheet -->
+		<link href="index.css" media="screen" rel="stylesheet" type="text/css">
+
+
+	</head>
+	
+	<body>
+		<div id='center' ondragstart="return false;" ondrop="return false;">
+			<div id='game_load'>
+				<div id='loading_screen'>
+					<div id='load_box'>
+						<!--I should find something to put here.-->
+					</div>
+					<br>
+					<div class="meter animate" style='width:460px'>
+						<span id='load_bar' style="width: 0%"><span>
+					</div>
+				</div>
+			</div>
+			
+			<div id='game_login'>
+				<div id='login_form'>
+					<center>
+						<img src='imgs/blue-player.png'>
+						<img src='imgs/red-player.png'>
+						Only chacters a-z, A-Z, 0-9. Must be at least 3 chacters long.
+						
+						<input id='name' class='text' maxlength="20">
+						<a href="#" id="play" class='button'>Play</a>
+					</center>
+				</div>
+			</div>
+				
+			<div id='game_room'>
+				<div id='chatbox'>
+					<div style='margin:5px;'>
+						Map: <span id='map_name'>???????</span><br>
+						Music: <img id='music_volume' src='imgs/audio-volume-3.svg'>
+						<a href="#" id="music_down" class='button'>-</a>
+						<a href="#" id="music_up" class='button'>+</a><br>
+										
+						SFX: <img id='sfx_volume' src='imgs/audio-volume-3.svg'>
+						<a href="#" id="sfx_down" class='button'>-</a>
+						<a href="#" id="sfx_up" class='button'>+</a><br>
+					</div>
+					<div id='chat_output'>
+					</div>
+					<input id='chat_input' class='text' maxlength="100">
+					<a href="#" id="send" class='button'>Send</a>
+				</div>
+				<canvas id="viewport">
+				</canvas>
+			</div>
+			
+			<div id='game_over'>
+				<div id='restart_form'>
+					<center>
+						<h1 id='restart_title'>GAME OVER!!!</h1>
+						<a href="#" id="revive" class='button'>Revive</a>
+					</center>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id='footer'>
+			<a href='credits.html'>Credits</a> | 
+			 <a href='https://www.google.com/chrome/browser/'>This Website seems to work best on chrome.</a> |
+			<a href='guide.html'>Guide</a>
+		</div>
+		
+	</body>
+	<!-- Library code -->
+		<script src="js/functions.js"></script>	
+		 	<!-- Load socket.io client side contents. -->
+		<script src="/socket.io/socket.io.js"></script>
+
+
+	 		<!-- Load the GUI rendering library code. -->
+		<!--<script src="lib/dat.gui.min.js"></script>-->
+			<!-- Load the keyboard specific code --> 
+		<script src="js/keyboard.js"></script>
+	<!-- Game data -->
+		<script src='js/maps.js'></script>
+	<!-- Game code -->
+
+	 		<!-- Load the common game code. -->
+		<script src="js/game.core.js"></script>
+			<!-- Finally, Load the game client code. -->
+		<script src="js/client.js"></script>		
+		<script src="js/game.client.js"></script>
+</html>

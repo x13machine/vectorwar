@@ -1,0 +1,16 @@
+CACHE MANIFEST
+NETWORK:
+*
+CACHE:
+/sounds/laser.ogg
+/sounds/pickup.ogg
+/sounds/shadow.ogg
+/imgs/audio-volume-0.svg
+/imgs/audio-volume-3.svg
+/imgs/html5-transparent.png
+/imgs/audio-volume-1.svg
+/imgs/background.png
+/imgs/red-player.png
+/imgs/audio-volume-2.svg
+/imgs/blue-player.png
+/imgs/searching.png

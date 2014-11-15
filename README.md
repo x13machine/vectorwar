@@ -6,6 +6,9 @@ A HTML5 multiplayer game
 View the app here: 
 https://vectorwar.herokuapp.com/
 
+This app was based off this tutorial:
+http://buildnewgames.com/real-time-multiplayer/
+
 The credits:
 /public/credits.html
 
@@ -13,7 +16,7 @@ The credits:
 * Get node.js
 * run `npm install` inside the cloned folder
 * run `node app.js` inside the cloned folder
-* Visit http://127.0.0.1:4004/?debug
+* Visit http://127.0.0.1:4004
 
 ## Getting started (Manual install)
 * Get node.js (v0.10.25)
